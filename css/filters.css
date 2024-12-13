@@ -1,0 +1,84 @@
+.filters .btn {
+  border-radius: 0;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+}
+
+.filters button {
+  width: 33.33%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  padding: 30px 40px;
+  font-size: clamp(0.875rem, 0.8723rem + 0.3382vw, 1.0625rem);
+}
+
+.filters button p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.filters button .button-text {
+  width: 80%;
+  text-align: left;
+  height: 49.5px;
+  display: flex;
+  align-items: center;
+}
+
+.filters button .button-icon {
+  width: 20%;
+  display: none;
+  text-align: right;
+  font-size: 33px;
+}
+
+.filters .active .button-icon {
+  display: block;
+}
+
+.btn:hover {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.btn:hover .button-icon {
+  color: rgb(37, 37, 37);
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: rgb(37, 37, 37);
+  background-color: rgb(216, 49, 49);
+  border-color: transparent;
+}
+
+@media (max-width: 1110px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 625px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters .btn {
+    width: 100%;
+  }
+}

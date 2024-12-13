@@ -1,0 +1,109 @@
+*:focus {
+  outline: none;
+}
+
+nav {
+  box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.clients {
+  background-color: #fcd232;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.clients::-webkit-scrollbar,
+body::-webkit-scrollbar,
+form::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: clamp(0.525rem, 1.9067rem + 2.2548vw, 4.375rem);
+  margin: 10% 0;
+  color: rgb(37, 37, 37);
+  font-weight: 700;
+}
+
+#applicationForm {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.form {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Add these new styles for error and success borders */
+select.error,
+input.error {
+  border: 2px solid red;
+}
+
+select.success,
+input.success {
+  border: 2px solid green;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 50px;
+  color: rgb(37, 37, 37);
+}
+
+#studentType option {
+  margin: 15px;
+}
+
+.button-last {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px;
+  z-index: 1;
+}
+
+.no-border {
+  border: none;
+}
+
+@media screen and (max-width: 1398px) {
+  .form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .col-lg-6:last-child {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  #applicationForm {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

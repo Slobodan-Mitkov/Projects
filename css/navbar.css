@@ -1,0 +1,348 @@
+nav .logo a:-webkit-any-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+}
+nav .logo .inner-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+}
+h6 {
+  font-size: 0.67rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 120px;
+  padding: 0 3em;
+  background-color: #fcd232;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav .logo {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 50%;
+}
+
+nav .logo .inner-logo {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-menu {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+nav .nav-item {
+  display: inline-block;
+}
+
+.btn {
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 12px 18px;
+}
+
+.opened .btn {
+  display: block;
+  width: 274px;
+  margin: 10px 24px;
+}
+
+nav .nav-item > a {
+  display: none;
+  padding: 0 1.5em;
+  line-height: 70px;
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.opened .nav-item > a {
+  display: inline-block;
+  padding: 0 1.5em;
+  line-height: 70px;
+  color: white;
+  text-decoration: none;
+}
+
+nav .nav-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+nav .nav-menu li::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(37, 37, 37);
+  transition: all 0.4s ease-out;
+}
+
+nav .nav-menu li::before {
+  bottom: 15px;
+}
+
+nav .nav-menu li:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+nav.opened .nav-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+nav.opened .nav-menu li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  transition: none;
+}
+
+nav.opened .nav-menu li::before {
+  bottom: 0px;
+}
+
+nav.opened .nav-menu li:hover::before {
+  width: 0;
+}
+
+.opened ul li:first-child {
+  padding-top: 100px;
+}
+
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown.show a::after {
+  transform: rotate(180deg);
+}
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 0.5em 0;
+  margin-top: -0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+nav .dropdown.show .dropdown-menu {
+  display: block;
+}
+nav .dropdown-item {
+  display: block;
+  padding: 0 2.5em;
+  font-size: 0.875em;
+  color: #000;
+  line-height: 3;
+  text-decoration: none;
+}
+nav .btn-hamburger {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  right: 1.5em;
+  bottom: 20%;
+  border: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  transform: translateY(-50%);
+}
+nav .btn-hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 6px;
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+nav .btn-hamburger .span1 {
+  width: 30px;
+  margin-left: auto;
+}
+
+nav .btn-hamburger .span2 {
+  width: 20px;
+  margin-left: auto;
+}
+
+nav .btn-hamburger .span3 {
+  width: 10px;
+  margin-left: auto;
+}
+
+.opened .btn-hamburger span {
+  background-color: white;
+}
+nav .btn-hamburger span:nth-child(4),
+nav .btn-hamburger span:nth-child(5) {
+  position: absolute;
+  top: 10px;
+  opacity: 0.5;
+}
+nav .btn-hamburger span:nth-child(4) {
+  transform: rotate(45deg) scale(0);
+}
+nav .btn-hamburger span:nth-child(5) {
+  transform: rotate(-45deg) scale(0);
+}
+nav.opened .btn-hamburger span:nth-child(4) {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+nav.opened .btn-hamburger span:nth-child(5) {
+  opacity: 1;
+  transform: rotate(-45deg) scale(1);
+}
+nav.opened .btn-hamburger span:nth-child(1),
+nav.opened .btn-hamburger span:nth-child(2),
+nav.opened .btn-hamburger span:nth-child(3) {
+  opacity: 0;
+}
+
+nav .btn {
+  margin-left: 2rem;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width: 8000px) {
+  nav.opened .nav-menu {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #363d4e;
+    transition: bottom 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  nav.opened .nav-menu {
+    bottom: 0;
+  }
+
+  .opened .btn-hamburger {
+    display: block;
+  }
+  nav .nav-item > a i {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1419px) {
+  nav .nav-item > a {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1419px) {
+  nav .btn-hamburger {
+    display: block;
+  }
+
+  nav .nav-item {
+    display: none;
+  }
+
+  .opened .nav-item {
+    display: inline-block;
+  }
+
+  nav .nav-menu {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+  }
+
+  nav .nav-menu {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #363d4e;
+    transition: bottom 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  nav.opened .nav-menu {
+    bottom: 0;
+  }
+
+  nav .btn {
+    display: none;
+  }
+
+  nav .dropdown-menu {
+    position: relative;
+    top: 0;
+    margin: 0 1.5em;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  nav .nav-item {
+    display: none;
+  }
+  .opened .nav-item {
+    display: inline-block;
+  }
+}

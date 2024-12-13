@@ -1,0 +1,139 @@
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(1rem, 0.8698rem + 3.787vw, 3rem);
+  margin-bottom: 2rem;
+  color: rgb(37, 37, 37);
+}
+
+.card-section {
+  background-color: #fcd232;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 186px;
+}
+
+.cards-inner {
+  width: 1110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 350px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  transition: transform 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover {
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+.card .academy {
+  font-size: 13px;
+}
+
+.card h5 + p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card .date {
+  font-size: 10.5px;
+  margin-bottom: 25px;
+}
+
+.card .card-inner {
+  padding: 15px;
+}
+
+.card .academy {
+  background-color: #fcd232;
+  width: fit-content;
+  padding: 4px 12px;
+}
+
+.card .academy,
+.card .date {
+  font-weight: bold;
+}
+
+.card .btn {
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+}
+
+.col-4 .category {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+}
+
+.button-btn {
+  text-align: right;
+}
+
+.card .button {
+  text-align: end;
+  width: 60%;
+  margin-left: auto;
+}
+
+.card .button .btn {
+  width: 100%;
+}
+
+.cards .button-text p {
+  font-size: clamp(0.8125rem, 0.8107rem + 0.2255vw, 0.9375rem);
+}
+
+@media (max-width: 1110px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 625px) {
+  .card {
+    width: calc(90% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    text-align: left;
+    width: calc(90% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .cards-inner {
+    width: 100%;
+  }
+}

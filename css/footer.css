@@ -1,0 +1,11 @@
+footer {
+  background-color: #302f38;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: clamp(0.625rem, 0.2122rem + 1.5784vw, 0.9rem);
+}
