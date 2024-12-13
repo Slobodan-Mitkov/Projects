@@ -1,0 +1,61 @@
+body {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    color: inherit;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a {
+    border: none;
+}
+
+nav {
+    border: none;
+}
+
+input {
+    color: var(--neutral-black);
+}
+
+table,
+tr,
+td,
+th {
+    border: none !important;
+    box-shadow: rgb(145 158 171 / 30%) 0px 0px 2px 0px,
+        rgb(145 158 171 / 12%) 0px 0px 0px 1px;
+}

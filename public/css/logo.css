@@ -1,0 +1,15 @@
+#theme-logo {
+    transition: filter 0.3s ease;
+}
+
+html.dark #theme-logo {
+    filter: invert(1);
+}
+
+#theme-logo {
+    transition: filter 0.3s ease;
+}
+
+html.dark #theme-logo {
+    filter: invert(1);
+}

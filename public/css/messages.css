@@ -1,0 +1,47 @@
+.filter-option:hover {
+    color: var(--primary);
+}
+
+.input-container {
+    position: relative;
+    width: 50%;
+}
+
+.input-container input {
+    width: 100%;
+}
+
+.input-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--text-input-icon);
+}
+
+.messages-sidebar {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.message-row {
+    transition: transform 0.2s ease-in-out;
+}
+
+html.dark .message-row td {
+    background-color: var(--secondary-muted);
+}
+
+html.light .message-row td {
+    background-color: var(--neutral-white);
+}
+
+.message-row:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.message-span {
+    opacity: 0.5;
+}

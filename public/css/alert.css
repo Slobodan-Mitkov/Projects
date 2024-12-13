@@ -1,0 +1,26 @@
+.is-invalid {
+    border: 1px solid red;
+}
+
+.is-valid {
+    border: 1px solid green;
+}
+
+.alert-success {
+    animation: fadeOut 8s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}

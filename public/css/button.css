@@ -1,0 +1,117 @@
+.dashboard-nav-button.bg-secondary-muted:hover,
+.profile-button.bg-secondary-muted:hover {
+    transition: all 0.3s ease;
+    background: var(--bg-gradient-light) !important;
+    color: var(--neutral-black) !important;
+}
+
+.dashboard-nav-button.bg-secondary-muted:active,
+.profile-button.bg-secondary-muted:active {
+    transition: all 0.3s ease;
+    background: var(--bg-gradient-grey) !important;
+    color: var(--neutral-black) !important;
+}
+
+.dashboard-nav-button.bg-shadow:hover,
+.profile-button.bg-shadow:hover {
+    transition: all 0.3s ease;
+    background: var(--primary-background) !important;
+    color: var(--neutral-white) !important;
+}
+
+.dashboard-nav-button.bg-shadow:active,
+.profile-button.bg-shadow:active {
+    transition: all 0.3s ease;
+    background: var(--primary-background-dark) !important;
+    color: var(--neutral-white) !important;
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    height: 35px;
+    background-color: var(--neutral-white);
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+    border: 2px solid;
+}
+
+.toggle-button.light {
+    background: var(--bg-gradient-button-light);
+    color: var(--neutral-white) !important;
+}
+
+.toggle-button.dark {
+    background: var(--bg-gradient-button-dark);
+    color: var(--neutral-black);
+}
+
+.toggle-button i {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button .fa-sun {
+    left: 5px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toggle-button .fa-moon {
+    right: 5px;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.toggle-button.dark .fa-sun {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.toggle-button.dark .fa-moon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toggle-button.light .fa-sun {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toggle-button.light .fa-moon {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.guest-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    background: var(--bg-primary-gradient);
+    color: var(--neutral-white) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn {
+    transition: all 0.3s ease;
+    --bs-btn-color: inherit;
+}
+
+.btn-primary:hover {
+    background: var(--bg-btn-primary-hover) !important;
+}
+
+.btn-primary:active {
+    background: var(--bg-btn-primary-active) !important;
+}

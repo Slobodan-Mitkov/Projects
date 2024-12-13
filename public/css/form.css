@@ -1,0 +1,48 @@
+[type="text"]:focus,
+input:where(:not([type])):focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary) !important;
+    --tw-ring-color: var(--primary);
+}
+
+[type="checkbox"]:checked:hover,
+[type="checkbox"]:checked:focus,
+[type="radio"]:checked:hover,
+[type="radio"]:checked:focus {
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+[type="checkbox"]:focus,
+[type="radio"]:focus {
+    --tw-ring-color: var(--primary);
+}
+
+[type="checkbox"]:checked,
+[type="radio"]:checked {
+    background-color: var(--primary);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus,
+.form-multiselect:focus {
+    --tw-ring-color: var(--primary);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 111 15 / 0.25);
+}

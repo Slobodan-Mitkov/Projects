@@ -1,0 +1,126 @@
+#sidebar-toggle-nav,
+#sidebar-toggle-app {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar-toggle-nav.hidden,
+#sidebar-toggle-app.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dashboard-section table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dashboard-section th,
+.dashboard-section td {
+    border: 1px solid var(--neutral-light);
+    padding: 10px;
+    text-align: left;
+}
+
+.initial-content,
+.dropdown-toggle {
+    width: 100%;
+}
+
+.dropdown-toggle {
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar-list {
+    border-radius: 4px;
+    padding: 4px 10px !important;
+    margin: 0.5rem !important;
+}
+
+.dropdown-toggle:hover,
+.sidebar-list:hover {
+    transition: all 0.3s ease;
+    background-color: var(--bg-sidebar-hover);
+    color: var(--text-sidebar-hover);
+}
+
+.dropdown-toggle.opened {
+    background: var(--bg-gradient-orange);
+    color: var(--neutral-white) !important;
+}
+
+.dropdown-menu {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, padding 0.3s ease;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    --bs-dropdown-border-radius: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.dropdown-menu a {
+    color: var(--neutral-white);
+}
+
+.dropdown-menu.opened a:hover {
+    transition: all 0.3s ease;
+    color: var(--bg-gradient-orange);
+    text-decoration: underline;
+}
+
+.dropdown-menu.opened {
+    display: block;
+    height: fit-content;
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list li.dropdown {
+    display: flex;
+    color: var(--neutral-white) !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dashboard-nav-button {
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.sidebar-list.active,
+.dropdown-menu a.active,
+.dropdown-toggle.active {
+    background: var(--bg-primary-gradient);
+    color: var(--neutral-white) !important;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+    transform: rotate(-90deg);
+}
+
+.rotate-icon.rotated {
+    transform: rotate(0deg);
+}

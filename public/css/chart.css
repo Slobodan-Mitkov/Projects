@@ -1,0 +1,123 @@
+.job-tooltip {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: none;
+    z-index: 10;
+}
+
+.fc-daygrid-day-frame {
+    position: relative;
+}
+
+.fc-daygrid-event-harness {
+    display: none;
+}
+
+.fc .fc-toolbar-title#fc-dom-1 {
+    font-size: 0.95em !important;
+    text-align: center;
+}
+
+.statistic-container {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.stat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-table th,
+.stat-table td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--neutral-white);
+}
+
+.stat-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fc-toolbar-chunk {
+    display: flex;
+}
+
+.fc-toolbar {
+    margin-top: 1.5em;
+}
+
+.table-striped tbody td {
+    padding: 8px;
+}
+
+.table-striped tbody th {
+    padding: 8px;
+}
+
+.table-striped tbody th i {
+    margin-right: 5px;
+}
+
+.table-striped tbody td .btn {
+    margin-left: 5px;
+}
+
+.table-striped tbody th .badge {
+    margin-left: 5px;
+}
+
+.table-striped tbody th .badge.bg-danger {
+    font-weight: bold;
+}
+
+.messages-count text {
+    margin: 0;
+    padding: 0;
+}
+
+#chartjs-tooltip {
+    position: absolute;
+    color: var(--neutral-light);
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+div#main-content .guest-toggle {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 10px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.table > :not(caption) > * > * {
+    background-color: inherit;
+}
+
+#main-content.transition-all.duration-300 #messages-title {
+    transition: color 0.3s ease;
+}
